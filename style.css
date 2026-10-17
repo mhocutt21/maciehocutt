@@ -29,3 +29,14 @@
 .contact-paper .image-heading .canva-img{max-height:170px}
 @media(max-width:850px){.hero .canva-polaroid{width:min(40vw,390px)}}
 @media(max-width:560px){.hero-name{width:min(90vw,400px);margin:1rem auto!important}.hero .canva-polaroid{width:min(85vw,360px)}.image-heading .canva-img{max-height:115px}.about-heading-decoration{max-width:340px}.education-grid{gap:1.3rem}.skill-stickers>.canva-img{max-height:65px}.job-tags .canva-img{max-width:300px}.contact-paper .image-heading .canva-img{max-height:120px}}
+
+/* Additional original Canva artwork: section tabs, navigation ribbon and accents */
+.contents-ribbon{display:flex;align-items:center;justify-content:center;gap:1rem;background:var(--cream);padding:.65rem 5%;font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.contents-ribbon a{display:block;width:min(210px,35vw)}.contents-art{width:100%}
+.hero-copy{isolation:isolate}.hero-oval{position:absolute;left:-9%;top:19%;width:min(450px,100%);z-index:-1;pointer-events:none;opacity:.82}.oval-art{width:100%}
+.about-heading-decoration{flex-wrap:wrap}.aboutme-label{max-width:170px;max-height:66px;object-fit:contain}
+.section-tab{display:flex;justify-content:flex-end;margin:-2.5rem 0 .8rem;pointer-events:none}.section-tab .tab-art{max-height:54px;max-width:min(230px,48vw);width:auto}
+#skills .section-tab,#experience .section-tab{justify-content:flex-start}
+.contact-section .section-tab{max-width:850px;margin:-2rem auto 1rem;justify-content:flex-end}
+.experience-list{position:relative}.experience-pin{position:absolute;right:0;top:-35px;width:75px;opacity:.75;pointer-events:none}.pin-art{width:100%}
+@media(max-width:560px){.contents-ribbon{font-size:.68rem}.section-tab{margin:-1.5rem 0 .5rem}.section-tab .tab-art{max-height:40px}.hero-oval{top:23%;left:0;width:90%}.experience-pin{width:50px;top:-22px}.aboutme-label{max-width:130px}}
