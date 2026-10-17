@@ -40,3 +40,9 @@
 .contact-section .section-tab{max-width:850px;margin:-2rem auto 1rem;justify-content:flex-end}
 .experience-list{position:relative}.experience-pin{position:absolute;right:0;top:-35px;width:75px;opacity:.75;pointer-events:none}.pin-art{width:100%}
 @media(max-width:560px){.contents-ribbon{font-size:.68rem}.section-tab{margin:-1.5rem 0 .5rem}.section-tab .tab-art{max-height:40px}.hero-oval{top:23%;left:0;width:90%}.experience-pin{width:50px;top:-22px}.aboutme-label{max-width:130px}}
+
+/* Ensure Canva's pre-framed photo is displayed without the legacy Polaroid treatment */
+.hero-inner > .canva-polaroid{position:relative!important;display:block!important;flex:0 1 470px!important;width:min(42vw,470px)!important;min-width:0!important;max-width:470px!important;padding:0!important;margin:0!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;transform:none!important;overflow:visible!important}
+.hero-inner > .canva-polaroid > img.hero-photo{display:block!important;width:100%!important;height:auto!important;max-width:100%!important;aspect-ratio:auto!important;object-fit:contain!important;object-position:center!important;transform:none!important;border:0!important;border-radius:0!important;box-shadow:none!important}
+.hero-inner > .canva-polaroid::before,.hero-inner > .canva-polaroid::after{content:none!important}
+@media(max-width:560px){.hero-inner > .canva-polaroid{width:min(85vw,360px)!important;flex:0 1 auto!important}}
