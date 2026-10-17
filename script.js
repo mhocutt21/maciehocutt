@@ -5,10 +5,9 @@ const contentsLinks=document.querySelector('#contents .contents-links');
 if(contentsLinks&&'IntersectionObserver' in window&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
   contentsLinks.classList.add('reveal-ready');
   const contentsObserver=new IntersectionObserver(entries=>{
-    if(entries.some(entry=>entry.isIntersecting)){
-      contentsLinks.classList.add('is-visible');
-      contentsObserver.disconnect();
+    for(const entry of entries){
+      contentsLinks.classList.toggle('is-visible',entry.isIntersecting);
     }
-  },{threshold:0.12});
+  },{threshold:0.2,rootMargin:'0px 0px -12% 0px'});
   contentsObserver.observe(contentsLinks);
 }
