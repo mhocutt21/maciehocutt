@@ -134,3 +134,22 @@
 #home .hero-subtitle{position:relative!important;z-index:5!important;margin:0!important;background:var(--cream)!important;padding:.4rem .85rem!important;line-height:1.35!important}
 #home .hero-star{display:none!important}
 @media(max-width:700px){#home .hero-name{margin-bottom:2.2rem!important}#home .hero-copy::before{left:25%!important;bottom:5.5rem!important;width:68%!important;height:clamp(65px,17vw,105px)!important}}
+
+/* Contents: compact horizontal navigation with scroll-triggered entrance */
+#contents.reference-contents{padding:1.1rem 3% 1.5rem!important;scroll-margin-top:60px}
+#contents .reference-contents-inner{max-width:1420px!important}
+#contents h2{width:min(400px,55vw)!important;margin:0 auto .6rem!important}
+#contents .contents-links{display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr))!important;align-items:center;gap:clamp(.35rem,1.5vw,1.4rem)!important;max-width:none!important;width:100%;margin:0 auto!important}
+#contents .contents-links a{min-height:76px;min-width:0;padding:.2rem;opacity:1;transform:none;transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.2,1)}
+#contents .contents-links img{display:block;max-width:100%!important;width:100%;max-height:76px!important;object-fit:contain}
+#contents .contents-links a:hover,#contents .contents-links a:focus-visible{transform:translateY(-7px) rotate(-2deg)!important}
+#contents .contents-links.reveal-ready a{opacity:0;transform:translateY(32px)}
+#contents .contents-links.reveal-ready.is-visible a{opacity:1;transform:translateY(0)}
+#contents .contents-links.reveal-ready.is-visible a:nth-child(2){transition-delay:.08s}
+#contents .contents-links.reveal-ready.is-visible a:nth-child(3){transition-delay:.16s}
+#contents .contents-links.reveal-ready.is-visible a:nth-child(4){transition-delay:.24s}
+#contents .contents-links.reveal-ready.is-visible a:nth-child(5){transition-delay:.32s}
+#contents .contents-links.reveal-ready.is-visible a:nth-child(6){transition-delay:.40s}
+@media(max-width:760px){#contents .contents-links{grid-template-columns:repeat(3,minmax(0,1fr))!important;row-gap:.6rem!important}#contents .contents-links img{max-height:58px!important}#contents h2{width:min(330px,70vw)!important}}
+@media(max-width:420px){#contents .contents-links{grid-template-columns:repeat(2,minmax(0,1fr))!important}#contents .contents-links a{min-height:52px}}
+@media(prefers-reduced-motion:reduce){#contents .contents-links.reveal-ready a{opacity:1!important;transform:none!important;transition:none!important}}
