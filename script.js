@@ -11,3 +11,13 @@ if(contentsLinks&&'IntersectionObserver' in window&&!window.matchMedia('(prefers
   },{threshold:0.2,rootMargin:'0px 0px -12% 0px'});
   contentsObserver.observe(contentsLinks);
 }
+
+
+// Reveal the About Me scrapbook pieces and paragraphs as they enter the screen.
+const aboutPieces=document.querySelectorAll('#about .about-heading-decoration, #about .about-text');
+if(aboutPieces.length&&'IntersectionObserver' in window&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+ const aboutObserver=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>entry.target.classList.toggle('is-visible',entry.isIntersecting));
+ },{threshold:.18});
+ aboutPieces.forEach(el=>{el.classList.add('about-reveal-ready');aboutObserver.observe(el)});
+}
