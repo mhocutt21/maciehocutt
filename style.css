@@ -191,3 +191,21 @@
 @keyframes photo-float{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-9px) rotate(1.1deg)}}
 @media(max-width:700px){#home .hero-name{width:100%!important}}
 @media(prefers-reduced-motion:reduce){#home .hero-name,#home .hero-name::before,#home .hero-inner>.canva-polaroid,#home .hero-inner>.canva-polaroid .hero-photo{animation:none!important}}
+
+/* Visible cover redesign: substantially larger signature, animated entrance */
+@media(min-width:701px){
+#home .hero-inner{max-width:1550px!important;grid-template-columns:58% 42%!important;gap:0!important}
+#home .hero-copy{max-width:none!important;width:100%!important;overflow:visible!important}
+#home .hero-name{width:128%!important;max-width:none!important;position:relative!important;left:-3%!important}
+#home .hero-name .hero-name-img{width:100%!important;max-width:none!important;max-height:none!important}
+#home .hero-inner>.canva-polaroid{max-width:490px!important;width:90%!important;justify-self:end!important}
+}
+#home .hero-name{animation:cover-name-slide 1.3s cubic-bezier(.18,.85,.22,1) both!important}
+#home .hero-name::before{animation:cover-highlight-in 1.15s .45s ease-out both!important}
+#home .hero-inner>.canva-polaroid{animation:cover-photo-swing 1.45s .3s cubic-bezier(.2,.8,.2,1) both!important}
+#home .hero-inner>.canva-polaroid .hero-photo{animation:cover-photo-bob 4s 1.8s ease-in-out infinite!important}
+@keyframes cover-name-slide{0%{opacity:0;transform:translateX(-90px) rotate(-6deg)}65%{opacity:1}100%{opacity:1;transform:translateX(0) rotate(0deg)}}
+@keyframes cover-highlight-in{0%{opacity:0;scale:.2}100%{opacity:1;scale:1}}
+@keyframes cover-photo-swing{0%{opacity:0;transform:translate(65px,-45px) rotate(13deg)}100%{opacity:1;transform:translate(0,0) rotate(0deg)}}
+@keyframes cover-photo-bob{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-13px) rotate(2deg)}}
+@media(prefers-reduced-motion:reduce){#home .hero-name,#home .hero-name::before,#home .hero-inner>.canva-polaroid,#home .hero-inner>.canva-polaroid .hero-photo{animation:none!important}}
