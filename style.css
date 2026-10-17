@@ -209,3 +209,8 @@
 @keyframes cover-photo-swing{0%{opacity:0;transform:translate(65px,-45px) rotate(13deg)}100%{opacity:1;transform:translate(0,0) rotate(0deg)}}
 @keyframes cover-photo-bob{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-13px) rotate(2deg)}}
 @media(prefers-reduced-motion:reduce){#home .hero-name,#home .hero-name::before,#home .hero-inner>.canva-polaroid,#home .hero-inner>.canva-polaroid .hero-photo{animation:none!important}}
+
+/* Cover cleanup: remove every oval treatment, shift signature 10px right. */
+#home .hero-name::before,#home .hero-copy::before,#home .hero-oval,#home .hero-oval-art{display:none!important;content:none!important;background:none!important;animation:none!important}
+@media(min-width:701px){#home .hero-name{left:calc(-3% + 10px)!important}}
+@media(max-width:700px){#home .hero-name{position:relative!important;left:10px!important}}
