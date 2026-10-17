@@ -173,3 +173,21 @@
 #contents .contents-links.reveal-ready.is-visible a{opacity:1!important;transform:translateY(0)!important}
 #contents .contents-links.reveal-ready.is-visible a:hover{transform:translateY(-6px) rotate(-2deg)!important}
 @media(prefers-reduced-motion:reduce){#contents .contents-links.reveal-ready a{opacity:1!important;transform:none!important}}
+
+/* Cover polish: larger signature and playful, restrained motion */
+@media(min-width:701px){
+ #home .hero-inner{grid-template-columns:minmax(0,1.28fr) minmax(0,.72fr)!important;column-gap:clamp(.5rem,2vw,2rem)!important;max-width:1420px!important}
+ #home .hero-copy{max-width:none!important;width:100%!important;justify-self:start}
+ #home .hero-name{width:112%!important;max-width:none!important;transform-origin:center left}
+ #home .hero-inner>.canva-polaroid{max-width:490px!important;width:100%!important}
+}
+#home .hero-name{animation:signature-entrance 1.05s cubic-bezier(.2,.8,.2,1) both}
+#home .hero-name::before{animation:oval-pop .85s .32s cubic-bezier(.2,1.4,.4,1) both}
+#home .hero-inner>.canva-polaroid{animation:photo-entrance 1s .25s cubic-bezier(.2,.8,.2,1) both}
+#home .hero-inner>.canva-polaroid .hero-photo{animation:photo-float 5s 1.35s ease-in-out infinite;transform-origin:55% 15%}
+@keyframes signature-entrance{from{opacity:0;transform:translate(-28px,24px) rotate(-3deg)}to{opacity:1;transform:translate(0,0) rotate(0)}}
+@keyframes oval-pop{from{opacity:0;scale:.65}to{opacity:1;scale:1}}
+@keyframes photo-entrance{from{opacity:0;transform:translate(25px,30px) rotate(5deg)}to{opacity:1;transform:translate(0,0) rotate(0)}}
+@keyframes photo-float{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-9px) rotate(1.1deg)}}
+@media(max-width:700px){#home .hero-name{width:100%!important}}
+@media(prefers-reduced-motion:reduce){#home .hero-name,#home .hero-name::before,#home .hero-inner>.canva-polaroid,#home .hero-inner>.canva-polaroid .hero-photo{animation:none!important}}
