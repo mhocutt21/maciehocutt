@@ -117,3 +117,12 @@
 #home .hero-inner>.canva-polaroid>.hero-photo{width:100%!important;max-height:none!important;height:auto!important}
 #home .hero-star{left:45%;bottom:13%}
 @media(max-width:700px){#home.hero{padding:2.5rem 6%!important}#home .hero-inner{display:flex!important;flex-direction:column!important;min-height:0;gap:2rem}#home .hero-copy{max-width:480px}#home .hero-inner>.canva-polaroid{width:min(78vw,360px)!important}#home .hero-subtitle{font-size:.85rem}}
+
+/* Cover correction: oval anchored to the text column, not to the PNG's transparent canvas */
+#home .hero-copy{position:relative!important;isolation:isolate}
+#home .hero-copy::before{content:"";display:block;position:absolute;z-index:-1;pointer-events:none;left:25%;bottom:4.1rem;width:72%;height:clamp(100px,12vw,175px);background:url("images/yellowoval.png") center/100% 100% no-repeat;transform:rotate(-4deg)}
+#home .hero-name{isolation:auto!important;z-index:1}
+#home .hero-name .hero-name-img{position:relative;z-index:1}
+#home .hero-subtitle{position:relative;z-index:2}
+#home .hero-star{display:none!important}
+@media(max-width:700px){#home .hero-copy::before{left:24%;bottom:3.1rem;width:72%;height:clamp(80px,24vw,130px)}}
