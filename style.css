@@ -57,3 +57,36 @@
 .about-heading-decoration .canva-img{max-height:85px}
 .section-heading .image-heading .canva-img{max-height:140px;max-width:min(640px,85vw)}
 @media(max-width:560px){.hero-inner>.canva-polaroid{max-width:min(85vw,360px)!important}.hero-name .hero-name-img{max-height:280px!important}}
+
+/* Canva PDF reference layout: faithful compositions, interactive contents */
+.reference-contents{background:#fcf8ef;border-top:24px solid #c1d8e5;border-bottom:24px solid #c1d8e5;padding:3.5rem 5%;scroll-margin-top:75px}
+.reference-contents-inner{max-width:850px;margin:auto}
+.reference-contents h2{width:min(620px,85%);margin:0 auto 2rem}
+.reference-contents h2 img{width:100%;height:auto}
+.contents-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:4rem;row-gap:1.5rem;max-width:580px;margin:auto}
+.contents-links a{display:flex;align-items:center;justify-content:center;min-height:65px;transition:transform .2s}
+.contents-links a:hover,.contents-links a:focus-visible{transform:translateY(-5px) rotate(-2deg)}
+.contents-links img{max-height:65px;max-width:100%;width:auto;object-fit:contain}
+.hero{padding:3.5rem 5%}
+.hero-inner{min-height:550px;gap:1rem;justify-content:center}
+.hero-copy{flex:1 1 56%;max-width:650px}
+.hero-copy .hero-name{width:100%;max-width:650px;margin:0!important}
+.hero-copy .hero-name img{width:100%;max-height:490px!important;object-fit:contain}
+.hero-inner>.canva-polaroid{flex:0 1 37%!important;width:37%!important;max-width:430px!important}
+.hero-inner>.canva-polaroid img{width:100%!important;height:auto!important}
+.hero .hero-star{left:25%;bottom:20%;width:62px}
+#about{display:grid;grid-template-columns:38% 1fr;gap:1.8rem 3rem;align-items:center}
+#about .section-heading{grid-column:1/-1;margin-bottom:0}
+#about .about-heading-decoration{grid-column:1;grid-row:2;display:flex;flex-direction:column;align-items:flex-start;gap:0;max-width:100%;margin:0}
+#about .about-heading-decoration .little-word{max-width:65%;width:65%}
+#about .about-heading-decoration .about-word{max-width:90%;width:90%;margin-left:12%}
+#about .about-heading-decoration .me-word{max-width:48%;width:48%}
+#about .about-text{grid-column:2;grid-row:2;margin:0;font-size:1rem;line-height:1.8}
+#education .education-grid{grid-template-columns:1fr .95fr 1fr;gap:1.5rem}
+#education .edu-card{align-self:start}
+#education .canva-campus{align-self:center}
+#skills .skills-grid{grid-template-columns:1.2fr 1fr;gap:2rem}
+#experience .experience-item{grid-template-columns:minmax(220px,34%) 1fr}
+#experience .experience-item .job-tags img{max-width:100%}
+@media(max-width:800px){#about{grid-template-columns:1fr 1.2fr;gap:1rem}#education .education-grid{grid-template-columns:1fr 1fr}#education .canva-campus{grid-column:1/-1;grid-row:1;max-width:250px;margin:auto}#skills .skills-grid{grid-template-columns:1fr}.hero-inner>.canva-polaroid{width:40%!important}}
+@media(max-width:600px){.hero-inner{flex-direction:column;min-height:0}.hero-copy{width:100%;text-align:center}.hero-copy .hero-name{max-width:430px;margin:auto!important}.hero-inner>.canva-polaroid{width:min(78vw,340px)!important;max-width:340px!important}.reference-contents{padding:2rem 5%}.contents-links{column-gap:.5rem;row-gap:.7rem}.contents-links img{max-height:52px}.reference-contents h2{width:85%}#about{grid-template-columns:1fr}#about .about-heading-decoration{grid-column:1;grid-row:2;max-width:280px}#about .about-text{grid-column:1;grid-row:3}#education .education-grid{grid-template-columns:1fr}#education .canva-campus{grid-column:1;grid-row:auto;order:2}#experience .experience-item{grid-template-columns:1fr}}
