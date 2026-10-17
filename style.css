@@ -126,3 +126,11 @@
 #home .hero-subtitle{position:relative;z-index:2}
 #home .hero-star{display:none!important}
 @media(max-width:700px){#home .hero-copy::before{left:24%;bottom:3.1rem;width:72%;height:clamp(80px,24vw,130px)}}
+
+/* Precise cover adjustments from screenshot: no subtitle overlap */
+#home .hero-copy{gap:0!important}
+#home .hero-name{margin:0 0 2.7rem!important}
+#home .hero-copy::before{left:26%!important;bottom:6.5rem!important;width:66%!important;height:clamp(85px,9vw,130px)!important;transform:rotate(-4deg)}
+#home .hero-subtitle{position:relative!important;z-index:5!important;margin:0!important;background:var(--cream)!important;padding:.4rem .85rem!important;line-height:1.35!important}
+#home .hero-star{display:none!important}
+@media(max-width:700px){#home .hero-name{margin-bottom:2.2rem!important}#home .hero-copy::before{left:25%!important;bottom:5.5rem!important;width:68%!important;height:clamp(65px,17vw,105px)!important}}
