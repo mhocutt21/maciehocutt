@@ -46,3 +46,14 @@
 .hero-inner > .canva-polaroid > img.hero-photo{display:block!important;width:100%!important;height:auto!important;max-width:100%!important;aspect-ratio:auto!important;object-fit:contain!important;object-position:center!important;transform:none!important;border:0!important;border-radius:0!important;box-shadow:none!important}
 .hero-inner > .canva-polaroid::before,.hero-inner > .canva-polaroid::after{content:none!important}
 @media(max-width:560px){.hero-inner > .canva-polaroid{width:min(85vw,360px)!important;flex:0 1 auto!important}}
+
+/* Layout cleanup: avoid oversized decorative assets and nested framing */
+.hero-inner{position:relative}
+.hero-copy{min-width:0}
+.hero-name{max-width:min(570px,100%)!important}
+.hero-name .hero-name-img{width:100%!important;height:auto!important;max-height:420px!important;object-fit:contain!important}
+.hero-inner>.canva-polaroid{align-self:center!important;max-width:min(42vw,470px)!important}
+.hero-inner>.canva-polaroid>.hero-photo{width:100%!important;max-height:560px!important;object-fit:contain!important}
+.about-heading-decoration .canva-img{max-height:85px}
+.section-heading .image-heading .canva-img{max-height:140px;max-width:min(640px,85vw)}
+@media(max-width:560px){.hero-inner>.canva-polaroid{max-width:min(85vw,360px)!important}.hero-name .hero-name-img{max-height:280px!important}}
