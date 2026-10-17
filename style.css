@@ -104,3 +104,16 @@
 #home .hero-star{left:47%;bottom:10%;width:55px}
 @media(max-width:800px){#home .hero-inner{min-height:430px;gap:1.5rem}#home .hero-copy{flex-basis:55%}#home .hero-inner>.canva-polaroid{flex-basis:42%!important;width:42%!important}}
 @media(max-width:600px){#home.hero{padding:3rem 6%}#home .hero-inner{flex-direction:column;gap:2.2rem;min-height:0}#home .hero-copy{flex:none;width:100%;max-width:450px;text-align:center}#home .eyebrow{margin-bottom:1.2rem}#home .hero-name{margin:0 auto 1.5rem!important}#home .hero-inner>.canva-polaroid{flex:0 0 auto!important;width:min(78vw,340px)!important;max-width:340px!important}#home .hero-subtitle{font-size:.9rem}#home .hero-star{display:none}}
+
+/* Cover final: vertically center the two Canva assets and make oval visible */
+#home.hero{padding:2rem 5%!important}
+#home .hero-inner{width:100%;max-width:1280px;min-height:620px;margin:0 auto;display:grid!important;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);align-items:center;column-gap:clamp(2rem,5vw,5rem);justify-content:center}
+#home .hero-copy{width:100%;max-width:620px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem}
+#home .hero-name{position:relative!important;isolation:isolate;width:100%!important;max-width:620px!important;margin:0!important;padding:0!important;overflow:visible!important}
+#home .hero-name .hero-oval-art{display:block!important;position:absolute!important;z-index:0!important;top:55%!important;left:22%!important;width:77%!important;height:auto!important;max-width:none!important;max-height:none!important;opacity:1!important;transform:rotate(-5deg);pointer-events:none}
+#home .hero-name .hero-name-img{position:relative!important;z-index:1!important;display:block!important;width:100%!important;height:auto!important;max-height:none!important}
+#home .hero-subtitle{margin:0!important;align-self:center;text-align:center;line-height:1.5}
+#home .hero-inner>.canva-polaroid{width:100%!important;max-width:480px!important;min-width:0!important;justify-self:center;align-self:center;flex:none!important}
+#home .hero-inner>.canva-polaroid>.hero-photo{width:100%!important;max-height:none!important;height:auto!important}
+#home .hero-star{left:45%;bottom:13%}
+@media(max-width:700px){#home.hero{padding:2.5rem 6%!important}#home .hero-inner{display:flex!important;flex-direction:column!important;min-height:0;gap:2rem}#home .hero-copy{max-width:480px}#home .hero-inner>.canva-polaroid{width:min(78vw,360px)!important}#home .hero-subtitle{font-size:.85rem}}
