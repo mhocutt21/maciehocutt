@@ -345,3 +345,19 @@
 #skills .section-heading{width:100%!important;margin:0 auto 0!important;display:flex!important;justify-content:center!important}
 #skills .skills-grid{width:100%!important}
 }
+
+/* Skills rebuild: independent paper notes, responsive and balanced */
+#skills.section{display:block!important;padding:clamp(3rem,6vw,6rem) clamp(1.5rem,6vw,7rem)!important;min-height:620px!important;overflow:visible!important}
+#skills .skills-layout{display:grid;grid-template-columns:32% 68%;align-items:center;gap:0;width:100%;max-width:1500px;margin:auto;min-height:510px}
+#skills .skills-title{align-self:start;padding-top:1rem}
+#skills .skills-title img{display:block;width:min(100%,430px);height:auto}
+#skills .skills-papers{position:relative;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(1rem,2vw,2rem);padding:4rem 0 1rem}
+#skills .skills-paper{background:#f1efea;box-shadow:0 12px 24px rgba(72,49,25,.11);padding:clamp(1.25rem,2vw,2rem);min-height:330px;color:#4a2d17;position:relative;background-image:repeating-linear-gradient(12deg,transparent 0px,rgba(100,100,100,.025) 2px,transparent 5px,transparent 20px);border:1px solid #e4e0d9}
+#skills .skills-paper-left{transform:rotate(-4deg);z-index:1}
+#skills .skills-paper-right{transform:rotate(3deg);z-index:2}
+#skills .skills-paper h3{font-family:'DM Sans',sans-serif;font-weight:700;font-size:clamp(1.15rem,1.6vw,1.65rem);line-height:1.2;margin:0 0 1rem}
+#skills .skills-paper ul{margin:0;padding-left:1.35rem}
+#skills .skills-paper li{font-size:clamp(1rem,1.2vw,1.24rem);line-height:1.6;margin:.15rem 0}
+#skills .skills-pin{position:absolute;z-index:3;left:43%;top:2.5rem;width:190px;height:14px;border:5px solid #aaa6a5;border-radius:50%;transform:rotate(17deg);box-shadow:0 2px 3px #aaa5}
+@media(max-width:900px){#skills .skills-layout{grid-template-columns:1fr;min-height:0;gap:1rem}#skills .skills-title{width:min(380px,80%);margin:auto;padding:0}#skills .skills-papers{padding-top:2rem}#skills .skills-pin{display:none}}
+@media(max-width:600px){#skills .skills-papers{grid-template-columns:1fr;gap:1.6rem}#skills .skills-paper{min-height:0}#skills .skills-paper-left,#skills .skills-paper-right{transform:rotate(0)}}
