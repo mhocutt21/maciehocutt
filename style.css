@@ -310,3 +310,12 @@
 #education .edu-card .school-label{height:105px!important}
 #education .edu-card .year-label{height:65px!important;margin-bottom:.6rem!important}
 }
+
+/* Skills: feature the original Canva paper notes, without the right-side word stickers */
+#skills.section{padding-top:clamp(2.5rem,5vw,4rem)!important;padding-bottom:clamp(3rem,6vw,5rem)!important}
+#skills .section-heading{margin-bottom:clamp(1rem,2vw,2rem)!important}
+#skills .skills-grid{display:flex!important;justify-content:center!important;align-items:center!important;grid-template-columns:none!important;gap:0!important;max-width:1250px!important;margin:0 auto!important}
+#skills .canva-notes{width:min(100%,1100px)!important;max-width:1100px!important;margin:0 auto!important;transform:none!important;flex:none!important}
+#skills .canva-notes>img{display:block!important;width:100%!important;max-width:none!important;max-height:none!important;height:auto!important;object-fit:contain!important}
+#skills .skill-stickers{display:none!important}
+@media(max-width:700px){#skills .canva-notes{width:100%!important}#skills .section-heading{margin-bottom:1rem!important}}
