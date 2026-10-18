@@ -255,3 +255,6 @@
 
 /* Slightly enlarge handwritten Me in About section */
 #about .about-heading-decoration .me-word{width:38%!important}
+
+/* Stronger About Me size adjustment */
+#about .about-heading-decoration .me-word{width:52%!important;top:240px!important;left:5%!important}
