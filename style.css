@@ -291,3 +291,22 @@
 #education .edu-card .year-label{height:65px!important;margin-bottom:.8rem!important}
 #education .image-heading img{width:85vw!important}
 }
+
+/* Education composition refinement: consistent top edges and compact spacing */
+@media(min-width:851px){
+#education.section{padding-top:2.4rem!important;padding-bottom:3.5rem!important}
+#education .section-heading{margin-bottom:.8rem!important}
+#education .image-heading img{width:clamp(510px,44vw,730px)!important}
+#education .education-grid{grid-template-columns:minmax(0,1fr) minmax(0,.95fr) minmax(0,1fr)!important;gap:clamp(1rem,2vw,2rem)!important;align-items:start!important}
+#education .edu-card{align-self:start!important;padding-top:0!important}
+#education .edu-card .school-label{height:115px!important;max-width:100%!important}
+#education .edu-card .year-label{height:65px!important;margin:0 0 .65rem!important}
+#education .edu-card p{font-size:clamp(1rem,1.15vw,1.13rem)!important;line-height:1.68!important}
+#education .canva-campus{align-self:start!important;margin-top:2.1rem!important;max-width:420px!important}
+}
+@media(max-width:850px){
+#education .section-heading{margin-bottom:1.2rem!important}
+#education .education-grid{gap:1.2rem!important}
+#education .edu-card .school-label{height:105px!important}
+#education .edu-card .year-label{height:65px!important;margin-bottom:.6rem!important}
+}
