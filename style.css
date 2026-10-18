@@ -263,3 +263,31 @@
 #about .about-heading-decoration .about-word{top:82px!important;left:25%!important}
 #about .about-heading-decoration .me-word{top:202px!important;left:8%!important}
 @media(max-width:760px){#about .about-heading-decoration .about-word{top:76px!important}#about .about-heading-decoration .me-word{top:183px!important}}
+
+/* Education: tighter, evenly aligned three-column scrapbook layout */
+#education.section{padding-top:clamp(2.5rem,4vw,4rem)!important;padding-bottom:clamp(3rem,5vw,5rem)!important}
+#education .section-heading{margin:0 auto clamp(1.8rem,3vw,3rem)!important}
+#education .section-heading .section-number{display:none!important}
+#education .image-heading{display:block!important;margin:0 auto!important;width:fit-content!important}
+#education .image-heading img{width:clamp(440px,40vw,680px)!important;max-width:85vw!important;max-height:none!important;height:auto!important}
+#education .education-grid{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,.9fr) minmax(0,1fr)!important;align-items:center!important;gap:clamp(1.2rem,3vw,3.5rem)!important}
+#education .edu-card{align-self:center!important;display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:0!important;min-width:0!important}
+#education .edu-card .school-label{width:100%!important;max-width:340px!important;height:125px!important;object-fit:contain!important;object-position:left center!important}
+#education .edu-card .year-label{width:70%!important;max-width:240px!important;height:80px!important;object-fit:contain!important;object-position:left center!important;margin:0 0 1.3rem!important}
+#education .edu-card p{margin:0!important;line-height:1.7!important;font-size:clamp(.96rem,1.08vw,1.1rem)!important}
+#education .canva-campus{align-self:center!important;justify-self:center!important;width:100%!important;max-width:390px!important;margin:0!important}
+#education .canva-campus img{width:100%!important;height:auto!important}
+@media(max-width:850px){
+#education .education-grid{grid-template-columns:1fr 1fr!important;gap:1.5rem!important}
+#education .canva-campus{grid-column:1/-1!important;grid-row:1!important;width:min(300px,75vw)!important;margin:auto!important}
+#education .edu-card{grid-row:2!important}
+#education .image-heading img{width:min(550px,80vw)!important}
+}
+@media(max-width:560px){
+#education .education-grid{grid-template-columns:1fr!important}
+#education .canva-campus{grid-column:1!important;grid-row:1!important}
+#education .edu-card{grid-row:auto!important}
+#education .edu-card .school-label{height:110px!important}
+#education .edu-card .year-label{height:65px!important;margin-bottom:.8rem!important}
+#education .image-heading img{width:85vw!important}
+}
