@@ -319,3 +319,13 @@
 #skills .canva-notes>img{display:block!important;width:100%!important;max-width:none!important;max-height:none!important;height:auto!important;object-fit:contain!important}
 #skills .skill-stickers{display:none!important}
 @media(max-width:700px){#skills .canva-notes{width:100%!important}#skills .section-heading{margin-bottom:1rem!important}}
+
+/* Skills composition fix: centered title, large notes, reduced empty space */
+#skills.section{min-height:0!important;padding:clamp(2rem,4vw,3.5rem) 5% clamp(2.5rem,5vw,4rem)!important;overflow:hidden!important}
+#skills .section-heading{width:100%!important;display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;margin:0 auto -1.8rem!important;padding:0!important}
+#skills .section-heading .image-heading{margin:0 auto!important;width:min(520px,65vw)!important;max-width:none!important;text-align:center!important}
+#skills .section-heading .image-heading img{display:block!important;width:100%!important;max-width:none!important;max-height:none!important;height:auto!important;object-fit:contain!important}
+#skills .skills-grid{width:100%!important;max-width:1400px!important;min-height:0!important;margin:0 auto!important;padding:0!important}
+#skills .skills-grid .canva-notes{width:100%!important;max-width:1350px!important;margin:0 auto!important;padding:0!important}
+#skills .skills-grid .canva-notes>img{width:100%!important;max-width:none!important;max-height:none!important;height:auto!important}
+@media(max-width:700px){#skills .section-heading{margin-bottom:-.5rem!important}#skills .section-heading .image-heading{width:min(420px,85vw)!important}}
