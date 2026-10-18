@@ -252,3 +252,6 @@
 #about .about-heading-decoration .me-word{top:213px!important}
 #about .about-text{grid-column:1!important;grid-row:2!important;padding-left:0!important}
 }
+
+/* Slightly enlarge handwritten Me in About section */
+#about .about-heading-decoration .me-word{width:38%!important}
