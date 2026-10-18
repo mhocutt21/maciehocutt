@@ -258,3 +258,8 @@
 
 /* Stronger About Me size adjustment */
 #about .about-heading-decoration .me-word{width:52%!important;top:240px!important;left:5%!important}
+
+/* Tighten handwritten About Me word grouping */
+#about .about-heading-decoration .about-word{top:82px!important;left:25%!important}
+#about .about-heading-decoration .me-word{top:202px!important;left:8%!important}
+@media(max-width:760px){#about .about-heading-decoration .about-word{top:76px!important}#about .about-heading-decoration .me-word{top:183px!important}}
