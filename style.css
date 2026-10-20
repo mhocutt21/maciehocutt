@@ -361,3 +361,15 @@
 #skills .skills-pin{position:absolute;z-index:3;left:43%;top:2.5rem;width:190px;height:14px;border:5px solid #aaa6a5;border-radius:50%;transform:rotate(17deg);box-shadow:0 2px 3px #aaa5}
 @media(max-width:900px){#skills .skills-layout{grid-template-columns:1fr;min-height:0;gap:1rem}#skills .skills-title{width:min(380px,80%);margin:auto;padding:0}#skills .skills-papers{padding-top:2rem}#skills .skills-pin{display:none}}
 @media(max-width:600px){#skills .skills-papers{grid-template-columns:1fr;gap:1.6rem}#skills .skills-paper{min-height:0}#skills .skills-paper-left,#skills .skills-paper-right{transform:rotate(0)}}
+
+/* Skills final polish: larger handwritten heading and realistic pin */
+@media(min-width:901px){
+#skills .skills-layout{grid-template-columns:36% 64%!important}
+#skills .skills-title{align-self:center!important;transform:translateY(-95px)!important}
+#skills .skills-title img{width:min(100%,570px)!important;max-width:none!important}
+#skills .skills-papers{padding-top:2rem!important}
+}
+#skills .skills-pin{left:44%!important;top:0!important;width:155px!important;height:68px!important;border:0!important;border-radius:0!important;box-shadow:none!important;transform:rotate(-17deg)!important;pointer-events:none!important}
+#skills .skills-pin::before{content:"";position:absolute;left:18px;top:10px;width:120px;height:42px;border:7px solid #a5a4a5;border-radius:80% 80% 65% 65%;transform:rotate(-12deg);box-shadow:1px 2px 1px rgba(0,0,0,.18)}
+#skills .skills-pin::after{content:"";position:absolute;left:41px;top:22px;width:93px;height:22px;border:4px solid #d1d0cf;border-radius:70%;transform:rotate(-12deg)}
+@media(max-width:900px){#skills .skills-title img{width:100%!important}}
