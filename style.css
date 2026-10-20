@@ -373,3 +373,13 @@
 #skills .skills-pin::before{content:"";position:absolute;left:18px;top:10px;width:120px;height:42px;border:7px solid #a5a4a5;border-radius:80% 80% 65% 65%;transform:rotate(-12deg);box-shadow:1px 2px 1px rgba(0,0,0,.18)}
 #skills .skills-pin::after{content:"";position:absolute;left:41px;top:22px;width:93px;height:22px;border:4px solid #d1d0cf;border-radius:70%;transform:rotate(-12deg)}
 @media(max-width:900px){#skills .skills-title img{width:100%!important}}
+
+/* Verified Skills adjustment: title is intentionally prominent; SVG clip replaces CSS oval */
+@media(min-width:901px){
+#skills .skills-layout{grid-template-columns:34% 66%!important}
+#skills .skills-title{align-self:center!important;transform:translateY(-80px) scale(1.22)!important;transform-origin:left center!important;position:relative!important;z-index:4!important}
+#skills .skills-title img{width:100%!important;max-width:none!important}
+}
+#skills .skills-pin{position:absolute!important;display:block!important;left:44%!important;top:-34px!important;width:220px!important;height:95px!important;border:none!important;border-radius:0!important;box-shadow:none!important;background:none!important;transform:rotate(9deg)!important;overflow:visible!important;z-index:8!important}
+#skills .skills-pin::before,#skills .skills-pin::after{content:none!important;display:none!important}
+@media(max-width:900px){#skills .skills-pin{display:none!important}}
